@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "NoviFont";
+    src: url("Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "NoviFont2";
+    src: url("JosefinSans-VariableFont_wght.ttf");
+}
+body{
+    margin:0;
+    font-family: NoviFont;
+    font-size: larger;
+    letter-spacing: 2px;
+    line-height: 30px;
+    background-image: url(images/pozadina.png);
+    background-repeat: repeat-x repeat-y;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-style: italic;
+    margin-left: 0px;
+    font-family: NoviFont2;
+    font-size: 30px;
+    color: #042c53;
+    max-width: 300px;
+}
+
+/*HEADER*/
+header{
+    z-index: 1;
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    background-color: #042c53 ;
+    color: #d9f888;
+    border-bottom: 5px solid #d9f888;
+}
+.slikaH{
+    height:70px;
+}
+header a{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #d9f888;
+    font-style: italic;
+    text-decoration: none;
+    transition:0.33s;
+}
+header a:hover{
+    color:#d8f8888e;
+    transition: 0.33s;
+}
+.hdr{
+    width:92%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 115px;
+    align-items: center;
+}
+
+/*BANNER*/
+.banner{
+    width:100%;
+    background-image: url(images/banner2.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 115px;
+}
+#bannerText{
+    color:white;
+    font-family: NoviFont2;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+    width:80%;
+    font-size: 50px;
+    transition:0.33s;
+}
+#bannerText:hover{
+    color:#d9f888;
+    transition:0.33s;
+}
+
+/*SADRŽAJ*/
+section{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    align-items: stretch;
+    margin-bottom: 35px;
+    box-shadow:5px 3px 10px #0000006f;
+}
+#proizvod{
+    padding: 20px;
+    flex:1 1 0;
+    transition:0.33s;
+    min-width: 350px;
+    transition: 0.33s;
+}
+#proizvod:hover{
+    background-color: rgb(234, 234, 234);
+    border-bottom: 6px solid #042c53;
+    transition: 0.33s;
+}
+#slika{
+    height:200px;
+    border-bottom: 6px solid #d9f888;
+    margin: 10px 0 0 0;
+    box-shadow:5px 5px 10px #0000006f;
+    transition: 0.33s;
+}
+#proizvod:hover #slika{
+    height: 210px;
+    transition: 0.33s;
+}
+#cijena{
+    font-size: 30px;
+    font-weight: bold;
+    color:#042c53;
+    font-style: italic;
+    margin-top: 5px;
+}
+#prekrizena{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(146, 0, 0);
+    font-style: italic;
+    text-decoration: line-through;
+    margin-bottom: 0;
+}
+#opis{
+    color:rgb(128, 128, 128);
+    min-width: 200px;
+}
+
+#proizvod a{
+    color:#d9f888;
+    background-color: #042c53;
+    text-decoration: none;
+    font-style: italic;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition:0.33s;
+}
+#proizvod a:hover{
+    background-color: #d9f888;
+    color:#042c53;
+    padding:5px 10px;
+    letter-spacing: 3px;
+    transition:0.33s;
+}
+.fa-solid{
+    font-size: smaller;
+}
+
+/*PRILAGODBE ZA MANJI EKRAN*/
+@media(max-width:1200px) {
+    .hdr{
+        width:99%;
+        margin-left: 5px;
+    }
+}
+@media(max-width:949px){
+    .slikaH{
+        width:350px;
+        height: auto;
+        margin-bottom: 0;
+    }
+    header{
+        position:absolute;
+    }
+    header a:hover{
+        letter-spacing: 3px;
+        transition: 0.33s;
+    }
+    .hdr{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0;
+        padding-top: 10px;
+        line-height: 50px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .banner{
+        margin-top: 383px;
+        height:350px;
+        transition:0.33s;
+    }
+    section{
+        margin-bottom: 65px;
+    }
+    #pocetak{
+        position:fixed;
+        right:20px;
+        bottom:100px;
+    }
+    #pocetak a{
+        text-decoration: none;
+        font-style: italic;
+        font-weight: bold;
+        color: #d9f888;
+        background-color: #042c53;
+        padding:15px 10px;
+        border-radius: 100%;
+        transition:0.33s;
+    }
+    #pocetak a:hover{
+        color:#042c53;
+        background-color: #d9f888;
+        transition:0.33s;
+    }
+}
+
+ /*FOOTER*/
+ footer{
+    height: 60px;
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    background-color: #042c53 ;
+    color: #d9f888;
+    border-bottom: 5px solid #d9f888;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+

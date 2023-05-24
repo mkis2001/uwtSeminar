@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Novosti1";
+    src: url("Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Novosti2";
+    src: url("JosefinSans-VariableFont_wght.ttf");
+}
+body{
+    margin: 0%;
+    font-family: Novosti1;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.pozadina1{
+    position: fixed;
+    top:120px;
+    left:0px;
+    height: 88%;
+    z-index: -1;
+}
+.pozadina2{
+    position: fixed;
+    top:120px;
+    right:0px;
+    height: 88%;
+    z-index: -1;
+}
+h1, h2{
+    font-family: Novosti2;
+    font-style: italic;
+    color: #042c53;
+    font-weight: bolder;
+}
+
+b{
+    color:#042c53;
+    font-style: italic;
+}
+i{
+    color:#042c53;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    background-color: #042c53 ;
+    color: #d9f888;
+    border-bottom: 5px solid #d9f888;
+    text-align: center;
+    padding: 25px 0;
+    position: fixed;
+}
+.slikaH{
+    height:70px;
+}
+@media(max-width:1399px) and (min-width:992px){
+    .slikaH{
+        margin-bottom: 20px;
+    }
+}
+header a{
+    font-family: Novosti1;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: #d9f888;
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.33s;
+}
+header a:hover{
+    color:#d8f8888e;
+    transition: 0.33s;
+}
+header .row{
+    align-items: center;
+}
+
+/*SADRŽAJ*/
+section{
+    background-image: url(images/pozadina.png);
+    background-repeat: repeat-x repeat-y;
+    max-width:1400px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    box-shadow:5px 3px 10px #0000006f;
+}
+section .row{
+    max-width: 1300px;
+    margin: auto;
+}
+#post{
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #042c53;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding:10px 10px;
+    height:99%;
+    margin-bottom: 5px;
+    box-shadow:5px 3px 10px #0000006f;
+    transition:0.33s;
+}
+#post:hover{
+    margin:0 -5px;
+    transition:0.33s;
+}
+#slika{
+    width:90%;
+    margin-left: 5%;
+    max-width: 450px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#post a{
+    color:#d9f888;
+    background-color: #042c53;
+    padding: 5px;
+    text-decoration: none;
+    font-style: italic;
+    border-radius: 10px;
+    transition:0.33s;
+}
+#post a:hover{
+    letter-spacing: 3px;
+    padding: 5px 10px;
+    color:#042c53;
+    background-color: #d9f888;
+    transition:0.33s;
+}
+
+/*PRILAGODBE ZA MANJI EKRAN*/
+@media(max-width:1399px){
+    section{
+        padding-top: 190px;
+    }
+}
+@media(max-width:991px){
+    section{
+        padding-top: 20px;
+    }
+    header{
+        position: relative;
+        padding:10px 0;
+    }
+    .slikaH{
+        width:350px;
+        height: auto;
+    }
+    header a{
+        line-height: 50px;
+    }
+    header a:hover{
+        letter-spacing: 3px;
+    }
+    
+    #pocetak{
+        position:fixed;
+        right:20px;
+        bottom:100px;
+    }
+    #pocetak a{
+        text-decoration: none;
+        font-style: italic;
+        font-weight: bold;
+        color: #d9f888;
+        background-color: #042c53;
+        padding:15px 10px;
+        border-radius: 100%;
+        transition:0.33s;
+    }
+    #pocetak a:hover{
+        color:#042c53;
+        background-color: #d9f888;
+        transition:0.33s;
+    }
+}
+
+/*LISTA KATEGORIJE*/
+#kategorije{
+    background-color: #d9f888;
+    color:#042c53;
+    width:97%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: right;
+}
+#kategorije a{
+    text-decoration: none;
+    color:#042c53;
+    font-style: italic;
+    transition:0.33s;
+}
+#kategorije a:hover{
+    letter-spacing: 3px;
+    color:#042b5382;
+    transition:0.33s;
+}
+#kat{
+    text-align: left;
+}
+
+/*FOOTER*/
+footer{
+    height: 60px;   
+    position: fixed;
+    bottom:0px;
+    width:100%;
+    background-color: #042c53 ;
+    color: #d9f888;
+    border-bottom: 5px solid #d9f888;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    padding-top: 15px;
+    font-size: larger;
+}

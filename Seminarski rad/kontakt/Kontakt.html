@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DTM Kontakt</title>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="../images/logo.png" />
+        <meta name="author" content="Matej Kiš"/>
+        <meta name="keywords" content="dtm, ,automobili, utrkivanje, natjecanje"/>
+        <meta name="description" content="Internetska stranica koja opisuje DTM natjecanje."/>
+        <link rel="stylesheet" media="screen and (min-width:950px)" href="../css1.css" />
+        <link rel="stylesheet" media="screen and (max-width:945px)" href="../css2.css" />
+    </head>
+
+    <body>
+        <a name="uvod"></a>
+        <!--POZADINA-->
+        <img src="../images/slika1L.jpg" class="pozadina1" />
+        <img src="../images/slika1R.jpg" class="pozadina2" />
+
+        <!--HEADER-->
+        <header>
+            <div class="hdr">
+                <img src="../images/logo2.png" class="slikaH" />
+                <a href="../Naslovnica.html" >Naslovnica</a>
+                <a href="#" >Kontakt</a>
+                <a href="../O nama.html" >O nama</a>
+                <a href="../Novosti.html">Novosti</a>
+                <a href="../Trgovina.html">Trgovina</a>
+            </div>
+        </header>
+
+        <!--FORMA-->
+        <form>
+             <section>
+                <article class="content" id="forma">
+                    <h2 id="naslov">Forma</h2>
+                    <table align="center">
+                        <th colspan="2">
+                            -Osobni podaci-
+                        </th>
+                        <tr>
+                            <td width="150"><label for="ime">Ime: </label></td>
+                            <td><input type="text" name="ime" placeholder="Ime"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="prezime">Prezime: </label></td>
+                            <td><input type="text" name="prezime" placeholder="Prezime"/></td>
+                        </tr>
+                        <tr >
+                            <td><label for="godine">Datum rođenja: </label></td>
+                            <td> <input type="date" name="godine"/></td>
+                        </tr>
+                    </table>
+                    <div id="hr2"></div>
+                    <table align="center">
+                        <th colspan="2">
+                            -Registracija-
+                        </th>
+                        <tr>
+                            <td width="150"><label for="mail">E-Mail: </label></td>
+                            <td><input type="email" name="mail"  placeholder="mail@domain"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lozinka">Lozinka: </label></td>
+                            <td><input type="password" name="lozinka" placeholder="Lozinka"></td>
+                        </tr>
+                    </table>
+                    <div id="hr2"></div>
+                    <table align="center">
+                        <th colspan="2">
+                            -Dodatno-
+                        </th>
+                        <tr>
+                            <td width="150"><label for="staza">Odaberi stazu:</label></td>
+                            <td>
+                                <select name="staza">
+                                    <option selected disabled>(odaberi stazu)</option>
+                                    <option>PORTIMAO</option>
+                                    <option>LAUSITZRING</option>
+                                    <option>IMOLA</option>
+                                    <option>NORISRING</option>
+                                    <option>NÜRBURGRING</option>
+                                    <option>SPA-FRANCORCHAMPS</option>
+                                    <option>RED BULL RING</option>
+                                    <option>HOCKENHEIMRING</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="line-height:normal">Odaberi proizvođača:</td>
+                            <td style="line-height:normal; text-align:left;">
+                                <label><input type="radio" name="proizvodac" value="merc">Mercedes-AMG</label><br/>
+                                <label><input type="radio" name="proizvodac" value="audi">Audi</label><br/>
+                                <label><input type="radio" name="proizvodac" value="lambo">Lamborghini</label><br/>
+                                <label><input type="radio" name="proizvodac" value="bmw">BMW</label><br/>
+                                <label><input type="radio" name="proizvodac" value="porsche">Porsche</label><br/>
+                                <label><input type="radio" name="proizvodac" value="ferrari">Ferrari</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Napomena:</td>
+                            <td><textarea rows="5" name="Napomena"></textarea></td>
+                        </tr>
+                    </table>
+                    <div id="hr2"></div>
+                    <table align="center">
+                        <th colspan="2">
+                            -Potvrdi-
+                        </th>
+                        <tr>
+                            <td><input type="submit" value="Potvrdi"/></td>
+                            <td><input type="reset" value="Poništi"/></td>
+                        </tr>
+                    </table>
+                    <div id="hr2"></div>
+                    <div id="mail">
+                        <a href="mailto:matej.kis@tvz.hr?subject=Upit">Pošalji E-Mail na adresu matej.kis@tvz.hr</a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.75618083069116!2d15.969149909027625!3d45.79537380775102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d68b441ce2df%3A0x54e2a03adf42446f!2sTehni%C4%8Dko%20veleu%C4%8Dili%C5%A1te%20u%20Zagrebu!5e0!3m2!1shr!2shr!4v1655193986344!5m2!1shr!2shr" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="karta"></iframe>
+                </article>
+            </section>
+        </form>
+
+        <!--FOOTER-->
+        <footer>
+            <p>Matej Kiš / <b style="color: #d9f888;">0036530044</b></p>
+        </footer>
+
+        <div id="pocetak">
+            <a href="#uvod">Vrh</a>
+        </div>
+    </body>
+</html>
